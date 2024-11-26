@@ -10,7 +10,13 @@ h1 {
     font-size: 2em;
 }
 
-/*Style för nav (innehåll dropdown)*/
+p, li {
+    text-align:left; 
+    font-size: 1.1em;
+    line-height: 150%;
+}
+
+/*För text i boxen och boxen själv*/
 
 nav {
   width : 600px; 
@@ -18,10 +24,9 @@ nav {
   margin : 40px auto; 
 }
 
-/*För text i boxen*/
 span {
   padding : 30px;
-  background : #2d2f31; 
+  background : #142411; 
   color : white;
   font-size : 1.25em;
   cursor : pointer;
@@ -48,43 +53,25 @@ span::after {
     padding : 20px;
 }
 
-/*
-Vad som sker efter klick. 
-MÅSTE GÅ ATT FÅ MER DRY. LÖSES! 
-*/
-#touch {
+#click, #click2, #click3, #click4 {
     position: absolute; 
-    opacity: 0; height: 0px;
-}   
-
-#touch2 {
-    position: absolute; 
-    opacity: 0; height: 0px;
-} 
-
-#touch3 {
-    position: absolute; 
-    opacity: 0; height: 0px;
-} 
-
-#touch4 {
-    position: absolute; 
-    opacity: 0; height: 0px;
+    opacity: 0; 
+    height: 0px;   
 }
 
-/*Storlek på dropdownen*/
-#touch:checked + .slide {
-    height: 150px;
+/*Storlek på dropdownen efter klick*/
+#click:checked + .slide {
+    height: 175px;
 } 
 
-#touch2:checked + .slide {
-    height: 250px;
+#click2:checked + .slide {
+    height: 315px;
 } 
 
-#touch3:checked + .slide {
-    height: 180px;
+#click3:checked + .slide {
+    height: 175px;
 } 
 
-#touch4:checked + .slide {
-    height: 300px;
+#click4:checked + .slide {
+    height: 525px;
 } 
